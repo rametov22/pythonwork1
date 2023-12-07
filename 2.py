@@ -1,230 +1,394 @@
 # 1
-# L = int(input('uzunlik sm: '))
-# M = L // 100
-# print(f'{L} sm = {M} metr')
+# num_ = int(input('целое число: '))
 #
+# if num_ > 0:
+#     num_ += 1
+#     print(num_)
+# else:
+#     print(num_)
+
 # 2
-# M = int(input('ogirlik kg: '))
-# T = M // 1000
-# print(f'{M} kg = {T} t')
-#
+# num_ = int(input('целое число: '))
+# if num_ > 0:
+#     num_ += 1
+#     print(num_)
+# else:
+#     num_ -= 2
+#     print(num_)
+
 # 3
-# B = int(input('Fayl Bayti: '))
-# Kb = B // 1024
-# print(f'{B} bayt = {Kb} kb')
-#
+# num_ = int(input('целое число: '))
+# if num_ > 0:
+#     num_ += 1
+#     print(num_)
+# elif num_ < 0:
+#     num_ -= 2
+#     print(num_)
+# else:
+#     num_ += 10
+#     print(num_)
+
 # 4
-# A = int(input('a ni kiriting: '))
-# B = int(input('b ni kiriting'))
-#
-# sum = A // B
-# print(f'a kesmani b kesmaga {sum} marta joylashtirish mm')
-#
+# a = int(input('число: '))
+# b = int(input('число: '))
+# c = int(input('число: '))
+# if a and b and c > 0:
+#     print('3')
+# elif a and b > 0 and c < 0 or a and c > 0 and b < 0 or b and c > 0 and a < 0:
+#     print('2')
+# elif a > 0 and b and c < 0 or b > 0 and a and c < 0 or c > 0 and b and a < 0:
+#     print('1')
+# else:
+#     print('0')
+
 # 5
-# A = int(input('a ni kiriting: '))
-# B = int(input('b ni kiriting'))
-#
-# dnt = A % B
-#
-# print(f'a kesmada joylashmagan uzunlig {dnt}')
-#
+# a = int(input('число: '))
+# b = int(input('число: '))
+# c = int(input('число: '))
+# if a and b and c > 0:
+#     print('musbat 3, manfiy 0')
+# elif a and b > 0 and c < 0 or a and c > 0 and b < 0 or b and c > 0 and a < 0:
+#     print('musbat 2, manfiy 1')
+# elif a > 0 and b and c < 0 or b > 0 and a and c < 0 or c > 0 and b and a < 0:
+#     print('musbat 1, manfiy 2')
+# else:
+#     print('musbat 0, manfiy 3')
+
 # 6
-# num_ = int(input('ikki xonali son: '))
-# teens = num_ // 10
-# ones = num_ % 10
-# print(f'onlik {teens} birlik {ones}')
-#
+# a = int(input('число: '))
+# b = int(input('число: '))
+# c = int(input('число: '))
+# if a > b and c:
+#     print(f'kottasi {a}')
+# elif b > a and c:
+#     print(f'kottasi {b}')
+# elif c > a and b:
+#     print(f'kottasi {c}')
+# else:
+#     print(None)
+
 # 7
-# num_ = int(input('ikki xonali son: '))
-# teens = num_ // 10
-# ones = num_ % 10
-# sum = teens + ones
-# print(f'raqamlari yigindisi {sum}')
-#
+# a = int(input('son: '))
+# b = int(input('son2: '))
+# if a > b:
+#     print(b)
+# else:
+#     print(a)
+
 # 8
-# num_ = int(input('ikki xonali son: '))
-# teens = num_ // 10
-# ones = num_ % 10
-# for_ = ones * 10 + teens
-# print(f'{num_} aylantirilgan holati {for_}')
-#
+# a = int(input('son: '))
+# b = int(input('son2: '))
+# if a > b:
+#     print(a, b)
+# else:
+#     print(b, a)
+
 # 9
-# num_ = int(input('uch xonali son: '))
-# hon = num_ // 100
-# print(f'{num_} 100 xonadigi soni {hon}')
+# A = int(input('sonA: '))
+# B = int(input('sonB: '))
+# if A > B:
+#     A, B = B, A
+#     print(A, B)
+# else:
+#     print(A, B)
 
 # 10
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# print(f'{num_} sonida birlik xonasidagi son {ones} onlik honasidagi son {teens}')
+# A = int(input('sonA: '))
+# B = int(input('sonB: '))
+# if A == B:
+#     print(A, B)
+# elif A != B:
+#     A += B
+#     print(A)
 
 # 11
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# sum = hon + teens + ones
-# print(f'{num_} raqamlarini yigindisi {sum}')
+# A = int(input('sonA: '))
+# B = int(input('sonB: '))
+# if A > B:
+#     print(A)
+# elif B > A:
+#     A = B
+#     print(A)
+# else:
+#     print('0')
 
 # 12
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# for_ = ones * 100 + teens * 10 + hon
-# print(f'{num_} sonini aylantirilgan holati {for_}')
+# a = int(input('son'))
+# b = int(input('son'))
+# c = int(input('son'))
+# if a < b and c:
+#     print(a)
+# elif b < a and c:
+#     print(b)
+# elif c < a and b:
+#     print(c)
+# else:
+#     print(None)
 
 # 13
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# for_ = teens * 100 + ones * 10 + hon
-# print(f'birinchi soni onga olish {for_}')
-#
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+# if a > b and a < c or a < b and a > c:
+#     print(a)
+# elif b > a and b < c or b < a and b > c:
+#     print(b)
+# elif c > a and c < b or c < a and c > b:
+#     print(c)
+# else:
+#     print(None)
+
 # 14
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# for_ = ones * 100 + hon * 10 + teens
-# print(f'ohirhi sonni chapga olish {for_}')
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+# if a < b and c and b < c:
+#     print(a, b, c)
+# elif b < a and c and a < c:
+#     print(b, a, c)
+# elif c < a and b and a < b:
+#     print(c, a, b)
+# elif a < b and c and c < b:
+#     print(a, c, b)
+# elif b < a and c and c < a:
+#     print(b, c, a)
+# elif c < a and b and b < a:
+#     print(c, b, a)
 
 # 15
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# for_ = teens * 100 + hon * 10 + ones
-# print(f'on lik bn yuzlikni almashtirish {for_}')
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+# if a + b > a + c and a + b > b + c:
+#     print(a + b)
+# elif a + c > a + b and a + c > b + c:
+#     print(a + c)
+# elif b + c > a + b and b + c > a + c:
+#     print(b + c)
+# else:
+#     print(None)
 
 # 16
-# num_ = int(input('uch xonali son: '))
-# ones = num_ % 10
-# teens = num_ // 10 % 10
-# hon = num_ // 100
-# for_ = hon * 100 + ones * 10 + teens
-# print(f'onlik bn birlikni almashtirish {for_}')
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+#
+# if a < b < c:
+#     a *= 2
+#     b *= 2
+#     c *= 2
+#     print(a, b, c)
+# else:
+#     a = -a
+#     b = -b
+#     c = -c
+#     print(a, b, c)
+#
 
 # 17
-# num_ = int(input('son 999 dan koproq: '))
-# hon = num_ // 100 % 10
-# print(f'{num_} minlik honadagi yuzlik soni {hon}')
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+#
+# if a < b < c or a > b > c:
+#     a *= 2
+#     b *= 2
+#     c *= 2
+#     print(a, b, c)
+# else:
+#     a = -a
+#     b = -b
+#     c = -c
+#     print(a, b, c)
 
 # 18
-# num_ = int(input('son 999 dan koproq: '))
-# min_ = num_ // 1000
-# print(f'{num_} da minlik son {min_}')
+# a = int(input('son1: '))
+# b = int(input('son2: '))
+# c = int(input('son3: '))
+# if a == b:
+#     result = c
+#     position = 'c'
+# elif a == c:
+#     result = b
+#     position = 'b'
+# else:
+#     result = a
+#     position = 'a'
+# print(f'qolgan son {result} tartib raqami {position}')
 
 # 19
-# sec = int(input('kun boshidan necha sekund otdi: '))
-# min_ = sec // 60
-# print(f'agar kun boshdan {sec} sec otkan bosa bu {min_} min otdi dgani')
+# a = int(input("Введите число a: "))
+# b = int(input("Введите число b: "))
+# c = int(input("Введите число c: "))
+# d = int(input("Введите число d: "))
+#
+# if a == b == c:
+#     result = d
+#     position = "d"
+# elif a == b == d:
+#     result = c
+#     position = "c"
+# elif a == c == d:
+#     result = b
+#     position = "b"
+# else:
+#     result = a
+#     position = "a"
+#
+# print(f"qolgan son {result} tartib raqami {position}.")
 
 # 20
-# sec = int(input('kun boshidan necha sekund otdi: '))
-# oc_ = sec / 3600
-# print(f'agar kun boshdan {sec} sec otkan bosa bu {oc_} soat otdi dgani')
+# import math
+# ax, ay = map(float, input("Введите координаты точки A (через пробел): ").split())
+# bx, by = map(float, input("Введите координаты точки B (через пробел): ").split())
+# cx, cy = map(float, input("Введите координаты точки C (через пробел): ").split())
+#
+# distance_AB = math.sqrt((bx - ax)**2 + (by - ay)**2)
+# distance_AC = math.sqrt((cx - ax)**2 + (cy - ay)**2)
+#
+# if distance_AB < distance_AC:
+#     closest_point = "B"
+#     closest_distance = distance_AB
+# else:
+#     closest_point = "C"
+#     closest_distance = distance_AC
+#
+# print(f"Точка {closest_point} ближайшая к точке A, расстояние между ними: {closest_distance}")
 
 # 21
-# sec = int(input('kun boshidan necha sekund otdi: '))
-# min_ = sec // 60
-# qol_ = sec % 60
-# print(f'kun boshdan {min_} min, {qol_} sec otdi')
+# x = int(input("Введите координату x: "))
+# y = int(input("Введите координату y: "))
+#
+# # Проверяем положение точки
+# if x == 0 and y == 0:
+#     print(0)
+# elif x == 0:
+#     print(2)
+# elif y == 0:
+#     print(1)
+# else:
+#     print(3)
 
 # 22
-# sec = int(input('kun boshidan necha sekund otdi: '))
-# s = sec // 3600
-# qol_ = sec % 3600
-# print(f'kun boshdan {s} soat, {qol_} sec otdi')
+# x = float(input("Введите координату x: "))
+# y = float(input("Введите координату y: "))
+#
+# if x > 0 and y > 0:
+#     print("Точка находится в первой координатной четверти.")
+# elif x < 0 and y > 0:
+#     print("Точка находится во второй координатной четверти.")
+# elif x < 0 and y < 0:
+#     print("Точка находится в третьей координатной четверти.")
+# elif x > 0 and y < 0:
+#     print("Точка находится в четвёртой координатной четверти.")
+# else:
+#     print("Точка не находится в координатных четвертях.")
 
 # 23
-# sec = int(input('kun boshdan necha sekund otdi: '))
-# s = sec // 3600
-# min_ = (sec % 3600) // 60
-# new_sec = sec % 60
-# print(f'kun boshdan {s} soat, {min_} minut, {new_sec} sec otdi')
+# x1, y1 = map(float, input("Введите координаты первого конца (x1 y1): ").split())
+# x2, y2 = map(float, input("Введите координаты второго конца (x2 y2): ").split())
+# x3, y3 = map(float, input("Введите координаты третьего конца (x3 y3): ").split())
+#
+# x4 = x2 + (x2 - x1)
+# y4 = y1 + (y2 - y1)
+#
+# print(f"Координаты четвертого конца: ({x4}, {y4})")
 
 # 24
-# K = int(input('1-365 gacha son: '))
+# import math
 #
-# week_day = (K) % 7
+# def f(x):
+#     if x > 0:
+#         return 2 * math.sin(x)
+#     else:
+#         return x - 6
 #
-# week_days = ('Yakshamba', 'Dushamba', 'Seshamba', 'Chorshamba', 'Payshamba', 'Juma', 'Shamba')
 #
-# print(f'{K}-kun {week_days[week_day]} ga togri keladi')
+# x_value = float(input("Введите значение x: "))
+# result = f(x_value)
+# print(f"f({x_value}) = {result}")
 
 # 25
-
-# K = int(input('1-365 gacha son: '))
+# def f(x):
+#     if x < -2 or x > 2:
+#         return x * 2
+#     else:
+#         return -3 * x
 #
-# week_day = (K - 4) % 7
 #
-# week_days = ('Yakshamba', 'Dushamba', 'Seshamba', 'Chorshamba', 'Payshamba', 'Juma', 'Shamba')
-#
-# print(f'{K}-kun {week_days[week_day]} ga togri keladi')
+# x_value = float(input("Введите значение x: "))
+# result = f(x_value)
+# print(f"f({x_value}) = {result}")
 
 # 26
+# def f(x):
+#     if x <= 0:
+#         return -x
+#     elif 0 < x < 2:
+#         return x ** 2
+#     elif x >= 2:
+#         return 4
+#     else:
+#         return x
 #
-# K = int(input('1-365 gacha son: '))
 #
-# week_day = (K) % 7
-#
-# week_days = ('Dushamba', 'Seshamba', 'Chorshamba', 'Payshamba', 'Juma', 'Shamba', 'Yakshamba',)
-#
-# print(f'{K}-kun {week_days[week_day]} ga togri keladi')
+# x_value = float(input("Введите значение x: "))
+# result = f(x_value)
+# print(f"f({x_value}) = {result}")
 
 # 27
-
-# K = int(input('1-365 gacha son: '))
+# def f(x):
+#     if x < 0:
+#         return 0
+#     elif x % 2 == 0:
+#         return 1
+#     else:
+#         return -1
 #
-# week_day = (K - 2) % 7
 #
-# week_days = ('Dushamba', 'Seshamba', 'Chorshamba', 'Payshamba', 'Juma', 'Shamba', 'Yakshamba',)
-#
-# print(f'{K}-kun {week_days[week_day]} ga togri keladi')
+# x_value = float(input("Введите значение x: "))
+# result = f(x_value)
+# print(f"f({x_value}) = {result}")
 
 # 28
-# N = int(input('yanvar birinchi kuni qaysi haftadan boshlanadi sonda(1-7): '))
-# K = int(input('1-365 gacha son: '))
+# year = int(input("Введите год: "))
 #
-# week_day = ((K - 1) + (N - 1)) % 7 + 1
-#
-# week_days = ('Dushamba', 'Seshamba', 'Chorshamba', 'Payshamba', 'Juma', 'Shamba', 'Yakshamba',)
-#
-# print(f'{K}-kun {week_days[week_day - 1]} ga togri keladi')
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f"{year} год - високосный. Всего 366 дней.")
+# else:
+#     print(f"{year} год - невисокосный. Всего 365 дней.")
 
 # 29
+# number = int(input("Введите целое число: "))
 #
-# def kv(A, B, C):
-#     if A < C or B < C:
-#         print("bunaqa razmerli kvadrat bu togri tortburchakka sigmidi")
-#         return
-#
-#     sum_kv = (A // C) * (B // C)
-#
-#     kv_ = A * B - sum_kv * C * C
-#
-#     # Выводим результат
-#     print(f"kvadratlan soni: {sum_kv}")
-#     print(f"joylashmay qolgan qismi: {kv_}")
-#
-# # Пример использования
-# A = int(input("A tomoni togri torburchak: "))
-# B = int(input("B tomoni togri torburchak: "))
-# C = int(input("C tomoni kvadrat: "))
-#
-# kv(A, B, C)
+# if number > 0 and number % 2 != 0:
+#     print(f"{number} - musbat toq son.")
+# elif number > 0 and number % 2 == 0:
+#     print(f'{number} - musbat juft son')
+# elif number < 0 and number % 2 != 0:
+#     print(f'{number} - manfiy toq son')
+# elif number < 0 and number % 2 == 0:
+#     print(f"{number} - manfiy juft son.")
+# elif number == 0:
+#     print(f"{number} - son nolga teng.")
+# else:
+#     print(f"{number} - osmondan olingan son.")
 
 # 30
+# number = int(input("Введите число от 1 до 999: "))
 #
-# def determine_year(year):
-#     century = (year - 1) // 100 + 1
-#     return century
-#
-#
-# # Пример использования
-# year = int(input("Введите год: "))
-# century = determine_year(year)
-# print(f"{year} год входит в {century} столетие.")
+# # Проверка и вывод результата
+# if 1 <= number <= 9:
+#     print(f"{number} - однозначное число.")
+# elif 10 <= number <= 99:
+#     if number % 2 == 0:
+#         print(f"{number} - четное двузначное число.")
+#     else:
+#         print(f"{number} - нечетное двузначное число.")
+# elif 100 <= number <= 999:
+#     if number % 2 == 0:
+#         print(f"{number} - четное трехзначное число.")
+#     else:
+#         print(f"{number} - нечетное трехзначное число.")
+# else:
+#     print("Число не находится в заданном диапазоне.")
